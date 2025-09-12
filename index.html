@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angkasa Food</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="Assets/logoangkasafood.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                    <img src="Assets/logoputih.png" alt="Angkasa Food Logo" class="logo-img">
+                    </a>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#beranda" class="nav-link">BERANDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#produk" class="nav-link">PRODUK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tentang" class="nav-link">TENTANG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#kontak" class="nav-link">KONTAK</a>
+                    </li>
+                </ul>
+                <div class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="beranda" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-left">
+                    <h1 class="hero-title">Angkasa Food</h1>
+                    <h2 class="hero-subtitle">Rasa Bintang, Harga Bersahabat</h2>
+                    <p class="hero-desc">
+                        Nikmati jajanan pasar, snack kekinian,<br>
+                        dan catering rumahan khas Jogja dengan kualitas terbaik.
+                    </p>
+                    <a href="#produk" class="hero-btn">
+                        Lihat Menu <img src="Assets/arrowdown.png" alt="Arrow Down" class="arrow-img">
+                    </a>
+                </div>
+                <div class="hero-right">
+                    <div class="hero-image-box" id="slider-images">
+                        <img src="Assets/menu/dadargulung.jpg" alt="Produk 1" class="hero-image slider-img active">
+                        <img src="Assets/menu/nasibox.jpg" alt="Produk 2" class="hero-image slider-img">
+                        <img src="Assets/menu/puding coklat.jpg" alt="Produk 3" class="hero-image slider-img">
+                        <img src="Assets/menu/hampers ingkung ayam.jpg" alt="Produk 4" class="hero-image slider-img">
+                        <img src="Assets/menu/seblakbaso.jpg" alt="Produk 5" class="hero-image slider-img">
+                    </div>
+                    <div class="hero-stars" id="slider-dots">
+                        <img src="Assets/starfull.png" alt="Aktif" class="star-dot active">
+                        <img src="Assets/starnone.png" alt="Nonaktif" class="star-dot">
+                        <img src="Assets/starnone.png" alt="Nonaktif" class="star-dot">
+                        <img src="Assets/starnone.png" alt="Nonaktif" class="star-dot">
+                        <img src="Assets/starnone.png" alt="Nonaktif" class="star-dot">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU SECTION -->
+        <section id="produk" class="produk-section">
+            <h2 class="produk-title">Menu Kami</h2>
+            <p class="produk-subtitle">Nikmati berbagai pilihan menu lezat dengan cita rasa tradisional dan modern yang menggugah selera</p>
+            
+            <!-- Menu akan di-generate dari JavaScript -->
+            <div id="menu-container">
+                <!-- Menu akan dimuat di sini -->
+            </div>
+        </section>
+
+        <!-- TESTIMONI SECTION -->
+        <section class="testimoni-section" id="testimoni">
+            <h2 class="testimoni-title">Testimoni Pelanggan</h2>
+            <div class="testimoni-stars">
+                <img src="Assets/starfull.png" alt="Star" class="testimoni-star">
+                <img src="Assets/starfull.png" alt="Star" class="testimoni-star">
+                <img src="Assets/starfull.png" alt="Star" class="testimoni-star">
+                <img src="Assets/starfull.png" alt="Star" class="testimoni-star">
+            </div>
+            
+            <div class="testimoni-container">
+                <div class="testimoni-card active" data-index="0">
+                    <img src="Assets/pp1.jpg" alt="Sefi" class="testimoni-avatar">
+                    <div class="testimoni-content">
+                        <h3 class="testimoni-name">SEFI</h3>
+                        <p class="testimoni-text">Makanan di Angkasa Food benar-benar lezat dan higienis. Nasi gorengnya bikin nagih, dan pelayanannya sangat ramah. Recommended banget!</p>
+                    </div>
+                </div>
+
+                <div class="testimoni-card" data-index="1">
+                    <img src="Assets/pp2.jpg" alt="Raka" class="testimoni-avatar">
+                    <div class="testimoni-content">
+                        <h3 class="testimoni-name">RAKA</h3>
+                        <p class="testimoni-text">Hampers dari Angkasa Food selalu jadi pilihan untuk acara keluarga. Kualitas makanan terjaga dan harganya sangat terjangkau. Puas banget!</p>
+                    </div>
+                </div>
+
+                <div class="testimoni-card" data-index="2">
+                    <img src="Assets/pp3.jpg" alt="Yusuf" class="testimoni-avatar">
+                    <div class="testimoni-content">
+                        <h3 class="testimoni-name">YUSUF</h3>
+                        <p class="testimoni-text">Seblak dan mie goreng di sini enak banget! Pedasnya pas dan bumbunya meresap. Sudah jadi langganan setia sejak tahun lalu.</p>
+                    </div>
+                </div>
+
+                <div class="testimoni-card" data-index="3">
+                    <img src="Assets/pp4.jpg" alt="Nama Anda" class="testimoni-avatar">
+                    <div class="testimoni-content">
+                        <h3 class="testimoni-name">NAMA ANDA</h3>
+                        <p class="testimoni-text">Testimoni Anda di sini. Tuliskan pengalaman Anda dengan Angkasa Food.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TENTANG SECTION -->
+        <section class="about-section" id="tentang">
+            <div class="about-header">
+                <h2 class="about-title">Tentang Kami</h2>
+                <p class="about-tagline">Angkasa Food, cita rasa tradisional dan modern yang higienis, lezat, serta terjangkau untuk semua kebutuhan.</p>
+            </div>
+
+            <div class="about-container">
+                <p class="about-intro">
+                    Angkasa Food bergerak di bidang penyediaan makanan dan minuman dengan fokus pada jajanan pasar tradisional, snack kekinian, serta kuliner siap saji. Kami melayani pembelian langsung untuk kebutuhan sehari-hari, sekaligus menyediakan katering dan penyediaan makanan untuk berbagai acara, baik pribadi maupun resmi. Dengan cita rasa yang terjaga, pilihan produk yang beragam, serta pelayanan yang ramah, Angkasa Food siap menemani setiap momen Anda agar lebih istimewa.
+                </p>
+
+                <div class="about-block">
+                    <h3 class="about-heading">Sejarah Singkat</h3>
+                    <p class="about-text">
+                        Sejak berdiri tahun 2013, Angkasa Food berawal dari titip jual jajan pasar di lapak sekitar. Berkat respon positif, usaha berkembang melayani pesanan untuk acara keluarga, kantor, hingga event, dengan variasi produk seperti nasi box, tumpeng, hampers, dan saserahan.
+
+                        Saat pandemi, Angkasa Food berinovasi membuka Angkasa Kitchen yang menyajikan kuliner siap saji. Kini, Angkasa Food menghadirkan beragam produk, dari jajanan hingga hidangan lengkap, dengan komitmen menjaga kualitas dan layanan untuk kebutuhan sehari-hari maupun acara spesial.
+                    </p>
+                </div>
+
+                <div class="about-block">
+                    <h3 class="about-heading">Visi dan Misi Kami</h3>
+                    <p class="about-text">
+                        Kami hadir dengan visi menjadi pilihan utama masyarakat dalam menikmati makanan dan minuman yang bukan hanya berkualitas, tetapi juga menghadirkan kepercayaan dan kelezatan yang selalu dirindukan. Setiap produk kami sajikan dengan higienis, lezat, dan terjangkau, sehingga bisa dinikmati siapa saja, kapan saja. Dengan semangat menjaga mutu rasa dan kebersihan, kami juga terus berinovasi menciptakan kreasi baru yang mengikuti tren, agar setiap kunjungan Anda selalu memberi pengalaman yang berbeda dan menyenangkan.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Decorative Divider -->
+        <section class="kontak-section" id="kontak">
+            <div class="divider">
+                <img src="Assets/1.png" alt="Decorative Divider" class="divider-img">
+            </div>
+            
+        <!-- Footer -->
+        <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-section">
+                    <img src="Assets/logoputih.png" alt="Angkasa Food Logo" class="footer-logo-img">
+                    </div>
+                </div>      
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <!-- Kontak -->
+                    <div class="footer-column">
+                        <h4 class="footer-title">Kontak</h4>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <img src="Assets/iconlocation.png" alt="Location" class="contact-icon">
+                                <span>Head Office: Kanoman RT 1 RW 5 Banyuraden Gamping</span>
+                            </div>
+                            <div class="contact-item">
+                                <img src="Assets/iconwhatsapp.png" alt="Phone" class="contact-icon">
+                                <span>Contact Person: +62 898-874-1975</span>
+                            </div>
+                            <div class="contact-item">
+                                <img src="Assets/iconemail.png" alt="Email" class="contact-icon">
+                                <span>Email: santimurwa@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>              
+                        <!-- Navigasi -->
+                        <div class="footer-column">
+                            <h4 class="footer-title">Navigasi</h4>
+                            <ul class="footer-nav">
+                                <li><a href="#beranda">Beranda</a></li>
+                                <li><a href="#produk">Menu Kami</a></li>
+                                <li><a href="#tentang">Tentang Kami</a></li>
+                                <li><a href="#kontak">Kontak Kami</a></li>
+                            </ul>
+                        </div>                 
+                        <!-- Sosial Media -->
+                        <div class="footer-column">
+                            <h4 class="footer-title">Sosial Media</h4>
+                            <div class="social-media">
+                                <div class="social-item">
+                                    <img src="Assets/iconinstagram.png" alt="Instagram" class="social-icon">
+                                    <span>angkasafood_jogja</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>&copy; 2025 PT INTEGRASI PRODUKTIVITAS INDONESIA. All rights reserved.</p>
+        </div>
+    </main>
+</body>
+</html>

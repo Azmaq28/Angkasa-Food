@@ -1,0 +1,277 @@
+/* Mobile */
+@media (max-width: 480px) {
+    /* Navbar responsive */
+    .nav-container {
+        padding: 0 16px;
+        height: 60px;
+        width: 100%;
+    }
+    
+    .logo-img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(39, 34, 31, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        gap: 0;
+        padding: 20px 0;
+        display: none;
+        z-index: 1000;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+    
+    .nav-link {
+        color: #FEDC18;
+        font-size: 18px;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(254, 220, 24, 0.3);
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-link:hover {
+        background-color: rgba(254, 220, 24, 0.1);
+        transform: none;
+    }
+    
+    .nav-link::after {
+        display: none;
+    }
+    
+    .burger {
+        display: flex;
+    }
+    
+    .burger span {
+        background: #FEDC18;
+        width: 25px;
+        height: 3px;
+    }
+
+    /* Hero responsive */
+    .hero-section {
+        padding: 70px 0 40px 0;
+    }
+    
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .hero-left {
+        max-width: 100%;
+        padding: 0 20px;
+        order: 2;
+    }
+    
+    .hero-right {
+        order: 1;
+        margin-top: 0;
+    }
+    
+    .hero-title {
+        font-size: 42px;
+        margin-bottom: 12px;
+        line-height: 1.1;
+    }
+    
+    .hero-subtitle {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 16px;
+    }
+    
+    .hero-desc {
+        font-size: 15px;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+    
+    .hero-btn {
+        font-size: 16px;
+        padding: 14px 28px;
+        margin-top: 12px;
+        border-radius: 12px;
+    }
+    
+    .hero-image-box {
+        width: 340px;
+        max-width: 350px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    
+    .hero-stars {
+        gap: 12px;
+        margin-top: 16px;
+    }
+    
+    .star-dot {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .arrow-img {
+        width: 14px;
+        height: 14px;
+    }
+
+    /* Menu responsive */
+    .produk-title {
+        font-size: 42px;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .menu-category {
+        padding: 0 10px;
+    }
+    
+    .menu-card {
+        padding: 12px;
+        gap: 12px;
+    }
+    
+    .menu-nama {
+        font-size: 18px;
+    }
+    
+    .menu-desc {
+        font-size: 12px;
+    }
+    
+    .menu-harga {
+        font-size: 24px;
+    }
+    
+    .menu-btn {
+        padding: 3px 6px;
+        font-size: 8px;
+    }
+    
+    .category-title {
+        font-size: 36px;
+    }
+
+    .produk-subtitle {
+        font-size: 16px;
+        margin-bottom: 32px;
+        padding: 0 20px;
+    }
+
+    /* Testimoni responsive */
+    .testimoni-title {
+        font-size: 100px;
+    }
+
+    .testimoni-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        min-height: 400px;
+    }
+
+    .testimoni-card.left,
+    .testimoni-card.right {
+        transform: scale(0.8);
+        opacity: 0.6;
+    }
+
+    .testimoni-card.left {
+        transform: translateX(-60%) scale(0.8);
+    }
+    
+    .testimoni-card.right {
+        transform: translateX(60%) scale(0.8);
+    }
+    
+    .testimoni-card {
+        max-width: 70%;
+        padding: 15px;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .testimoni-avatar {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .testimoni-name {
+        font-size: 18px;
+    }
+    
+    .testimoni-text {
+        font-size: 14px;
+    }
+    
+    .testimoni-card.active {
+        transform: scale(1.02);
+    }
+
+    .about-title { 
+        font-size: 70px; 
+    }
+
+    .about-heading { 
+        font-size: 38px;
+    }
+    .about-tagline {
+     font-size: 16px;
+    }
+
+    .about-intro, .about-text { 
+    font-size: 16px; line-height: 1.8; 
+    }
+
+    .about-header::before { 
+    width: 90px; height: 36px; top: 18px; 
+    }
+
+    /* Kontak Responsive */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        margin-left: 20px;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .logo-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+    
+    .footer-logo-img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .divider-img {
+        width: 150px;
+    }
+    
+    .copyright p {
+        padding: 0 16px;
+    }
+}
