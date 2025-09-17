@@ -1469,7 +1469,7 @@ body {
     
     .menu-btn {
         padding: 3px 6px;
-        font-size: 8px;
+        font-size: 10px;
     }
     
     .category-title {
@@ -1635,7 +1635,7 @@ body {
     }
 }
 
-/* Extra Small Mobile - 375px and below */
+/* Extra Small Mobile - 400px and below */
 @media (max-width: 400px) {
     /* Navbar responsive */
     .nav-container {
