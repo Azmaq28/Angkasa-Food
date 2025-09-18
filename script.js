@@ -391,12 +391,36 @@ function generateMenuHTML() {
         grid.innerHTML = visibleItems.map(item => createMenuItemHTML(item)).join('');
         this.textContent = 'Lihat Semua';
         this.setAttribute('data-expanded', 'false');
+        // Re-attach event listeners to the new buttons
+        const buttons = grid.querySelectorAll('.menu-btn');
+        buttons.forEach(btn => {
+          btn.addEventListener('click', function() {
+            const menuName = btn.getAttribute('data-menu') || 'produk';
+            const message = encodeURIComponent(
+              `Halo! Saya tertarik dengan menu *${menuName}* dari Warung Kuliner Naiyamie. Bisa saya tanya-tanya lebih lanjut?`
+            );
+            const whatsappUrl = `https://wa.me/6281210451414?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+          });
+        });
       } else {
         // Show all items
         const items = menuData[category];
         grid.innerHTML = items.map(item => createMenuItemHTML(item)).join('');
         this.textContent = 'Sembunyikan';
         this.setAttribute('data-expanded', 'true');
+        // Re-attach event listeners to the new buttons
+        const buttons = grid.querySelectorAll('.menu-btn');
+        buttons.forEach(btn => {
+          btn.addEventListener('click', function() {
+            const menuName = btn.getAttribute('data-menu') || 'produk';
+            const message = encodeURIComponent(
+              `Halo! Saya tertarik dengan menu *${menuName}* dari Warung Kuliner Naiyamie. Bisa saya tanya-tanya lebih lanjut?`
+            );
+            const whatsappUrl = `https://wa.me/6281210451414?text=${message}`;
+            window.open(whatsappUrl, '_blank');
+          });
+        });
       }
     });
   });
