@@ -452,7 +452,7 @@ function generateMenuHTML() {
           btn.addEventListener('click', function() {
             const menuName = btn.getAttribute('data-menu') || 'produk';
             const message = encodeURIComponent(
-              `Halo! Saya tertarik dengan menu *${menuName}* dari Warung Kuliner Naiyamie. Bisa saya tanya-tanya lebih lanjut?`
+              `Halo! Saya tertarik dengan menu *${menuName}* dari Angkasa Food. Bisa saya tanya-tanya lebih lanjut?`
             );
             const whatsappUrl = `https://wa.me/6281210451414?text=${message}`;
             window.open(whatsappUrl, '_blank');
@@ -470,7 +470,7 @@ function generateMenuHTML() {
           btn.addEventListener('click', function() {
             const menuName = btn.getAttribute('data-menu') || 'produk';
             const message = encodeURIComponent(
-              `Halo! Saya tertarik dengan menu *${menuName}* dari Warung Kuliner Naiyamie. Bisa saya tanya-tanya lebih lanjut?`
+              `Halo! Saya tertarik dengan menu *${menuName}* dari Angkasa Food. Bisa saya tanya-tanya lebih lanjut?`
             );
             const whatsappUrl = `https://wa.me/6281210451414?text=${message}`;
             window.open(whatsappUrl, '_blank');
