@@ -40,308 +40,363 @@ function resetAutoSlide() {
 
 // Data Menu
 const menuData = {
-  "Nasi Goreng": [
+  "Best Seller": [
     {
-        name: "Nasi Goreng Ayam",
-        image: "Assets/menu/Nasigorengayam.jpg",
-        description: "Nasi goreng spesial dengan potongan ayam yang gurih dan bumbu rempah pilihan.",
-        price: "18K"
+      name: "Tumpeng",
+      image: "Assets/menu/Tumpengmini.jpg",
+      description: " Nasi Tumpeng dengan nasi kuning harum, lauk pauk lengkap, dan cita rasa istimewa yang cocok untuk momen spesial.",
+      price: "200K"
     },
     {
-        name: "Nasi Goreng Sosis",
-        image: "Assets/menu/nasigorengsosis.jpg",
-        description: "Nasi goreng lezat dengan sosis premium dan sayuran segar.",
-        price: "16K"
+        name: "Pastel Sayur",
+        image: "Assets/menu/pastelsayur.jpg",
+        description: "Pastel Sayur dengan kulit renyah berisi sayuran segar berbumbu gurih, cocok jadi camilan hangat yang bikin nagih.",
+        price: "-"
     },
     {
-        name: "Nasi Goreng Bakso",
-        image: "Assets/menu/nasigorengtelor.jpg",
-        description: "Nasi goreng dengan campuran bakso segar dan bumbu istimewa.",
-        price: "22K"
+        name: "Risol Mayo",
+        image: "Assets/menu/risolmayo.jpg",
+        description: "Risol Mayo dengan kulit renyah berisi isian mayo creamy dan gurih yang lumer di setiap gigitan.",
+        price: "-"
     },
     {
-        name: "Nasi Goreng Telur",
-        image: "Assets/menu/nasigorengtelor.jpg",
-        description: "Simple, gurih, dan selalu jadi favorit.",
-        price: "15K"
-    },
-    {
-        name: "Nasi Goreng Bakso Telur",
-        image: "Assets/menu/nasigorengtelor.jpg",
-        description: "Kombinasi mantap bakso dan telur.",
-        price: "18K"
-    },
-    {
-        name: "Nasi Goreng Sosis Telur",
-        image: "Assets/menu/nasigorengtelor.jpg",
-        description: "Gurihnya sosis dan telur dalam satu piring.",
-        price: "18K"
-    },
-    {
-        name: "Nasi Goreng Pindang",
-        image: "Assets/menu/Nasigorengpindang.jpg",
-        description: "Nasi goreng khas dengan aroma pindang.",
-        price: "15K"
-    } 
-  ],
-  "Mie Goreng": [
-    {
-      name: "Mie Goreng Sosis",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Mie goreng dengan sosis premium dan bumbu rempah yang menggugah selera.",
-      price: "15K"
-    },
-    {
-      name: "Mie Goreng Ayam",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Mie goreng spesial dengan potongan ayam dan sayuran segar.",
-      price: "15K"
-    },
-    {
-      name: "Mie Goreng Bakso",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Mie goreng nikmat dengan bakso kenyal.",
-      price: "15K"
-    },
-    {
-      name: "Mie Goreng Sapi",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Mie goreng spesial dengan potongan ayam dan sayuran segar.",
-      price: "15K"
-    },
-    {
-      name: "Mie Goreng Mie",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Mie goreng spesial dengan potongan ayam dan sayuran segar.",
-      price: "15K"
-    }
-  ],
-  "Nasi Lele": [
-    {
-      name: "Nasi Lele Sambel Meteor",
-      image: "Assets/menu/Nasilele.jpg",
-      description: "Lele crispy plus sambal pedas membara.",
-      price: "18K"
-    },
-    {
-      name: "Nasi Paket Lele + Es Teh",
-      image: "Assets/menu/Nasilele.jpg",
-      description: "Paket hemat dengan lele goreng dan teh segar.",
-      price: "20K"
-    },
-    {
-      name: "Nasi Lele Kremes Sambel Lalap",
-      image: "Assets/menu/Nasilele.jpg",
-      description: "Lele goreng garing dengan kremes renyah, sambal pedas, dan lalapan segar.",
-      price: "habis"
-    }
-  ],
-  "Minuman": [
-    {
-      name: "Pop Ice",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Minuman populer dengan rasa manis dan asam.",
-      price: "5K"
-    },
-    {
-      name: "Es Nutrisari Jeruk",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Es nutrisari jeruk dengan rasa manis dan asam.",
-      price: "5K"
-    },
-    {
-      name: "Es Teh",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Es teh dengan rasa manis",
-      price: "4K"
-    }
-  ],
-  "Snack": [
-    {
-      name: "Puding Coklat",
-      image: "Assets/menu/puding coklat.jpg",
-      description: "Manis lembut dengan rasa coklat pekat.",
-      price: "2K"
-    },
-    {
-      name: "Risol Mayo",
+      name: "Dadar Gulung",
       image: "Assets/menu/dadargulung.jpg",
-      description: "Risol isi mayo gurih dan lezat.",
-      price: "3K"
+      description: " Dadar Gulung lembut berisi kelapa manis legit, jadi kudapan tradisional yang selalu menggoda selera.",
+      price: "-"
     },
     {
-      name: "Dadar Gulung Mawar",
-      image: "Assets/menu/dadargulung.jpg",
-      description: "Dadar gulung isi kelapa manis dengan aroma mawar.",
-      price: "2K"
-    }
-  ],
-  "Nasi Bakar": [
-    {
-      name: "Nasi Bakar Ayam",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Nasi bakar dengan ayam suwir berbumbu khas.",
-      price: "5K"
+        name: "Kopyor",
+        image: "Assets/menu/kopyor.jpg",
+        description: "Es Kopyor dengan serutan kelapa lembut, manis segar, dan sensasi dingin yang langsung menyegarkan dahaga.",
+        price: "-"
     },
     {
-      name: "Nasi Bakar Pindang",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Nasi bakar dengan aroma pindang yang menggoda.",
-      price: "6K"
+        name: "Nasi Box",
+        image: "Assets/menu/nasibox.jpg",
+        description: "Nasi Box praktis dengan menu lengkap, rasa lezat, dan porsi pas, cocok untuk berbagai acara dan kebutuhan harian.",
+        price: "-"
     },
-  ],
-  "Seblak": [
     {
-      name: "Seblak Sosis",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Kenikmatan seblak pedas dengan potongan sosis.",
-      price: "16K"
+        name: "Snack Box",
+        image: "Assets/menu/snackbox.jpg",
+        description: "Snack Box berisi aneka camilan lezat, praktis, dan higienis, cocok untuk menemani acara dan momen istimewa.",
+        price: "-"
+    },
+    {
+        name: "Nasi Goreng",
+        image: "Assets/menu/Nasigorengtelor.jpg",
+        description: "Nasi Goreng dengan bumbu khas yang gurih dan aroma menggoda, selalu jadi pilihan nikmat setiap saat.",
+        price: "-"
     },
     {
       name: "Seblak Bakso",
       image: "Assets/menu/seblakbaso.jpg",
       description: "Seblak berkuah pedas dengan bakso kenyal.",
-      price: "15K"
+      price: "-"
     },
     {
-      name: "Seblak Makaroni",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Makaroni pedas gurih khas seblak favorit.",
-      price: "14K"
-    }
-  ],
-  "Tomyam": [
-    {
-      name: "Tomyam Bakso Ikan",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Tomyam pedas segar dengan bakso ikan.",
-      price: "habis"
-    }
-  ],
-  "Nasi Kotak": [
-    {
-      name: "Nasi Kenduri Nilla Bakar",
-      image: "Assets/menu/Nasikendurinillabakar.jpg",
-      description: "Nasi lengkap dengan ikan nila bakar istimewa.",
-      price: "35K"
-    },
-    {
-      name: "Nasi Ayam",
-      image: "Assets/menu/Nasiayam.jpg",
-      description: "Nasi dengan ayam goreng crispy dan sambal pedas.",
-      price: "17K"
-    },
-    {
-      name: "Nasi Paha Bawah",
-      image: "Assets/menu/nasikotakpahabawah.jpg",
-      description: "Nasi dengan paha ayam bawah goreng renyah.",
-      price: "12K"
-    }
-  ],
-  "Nasi Kenduri": [
-    {
-      name: "Nasi Kenduri Ayam Goreng",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Nasi lengkap dengan ayam goreng crispy dan sambal pedas.",
-      price: "35K"
-    }
-  ],
-  "Snack Box": [
-    {
-      name: "Snack Box",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Item bisa menyesuaikan sesuai harga",
-      price: "6K - 10K"
-    }
-  ],
-  "Rice Bowl": [
-    {
-      name: "Rice Bowl Ayam Suwir",
-      image: "Assets/menu/Ricebowlayam.jpg",
-      description: "Rice bowl dengan ayam suwir berbumbu lezat.",
-      price: "12K"
-    },
-    {
-      name: "Rice Bowl Sosis",
-      image: "Assets/menu/Ricebowlsosis.jpg",
-      description: "Rice bowl dengan potongan sosis premium.",
-      price: "12K"
-    },
-    {
-      name: "Rice Bowl Nugget",
+      name: "Rice Bowl",
       image: "Assets/menu/Ricebowlnaget.jpg",
-      description: "Rice bowl dengan nugget renyah.",
-      price: "12K"
-    }
-  ],
-  "Nasi Bento": [
-    {
-      name: "Nasi Bento Kids",
-      image: "Assets/menu/Bentokids.jpg",
-      description: "Nasi bento dengan porsi kecil dan lauk favorit anak-anak.",
-      price: "10K"
+      description: "Rice Bowl praktis dengan nasi hangat, lauk lezat, dan bumbu istimewa yang siap memanjakan selera.",
+      price: "-"
     },
-    {
-      name: "Nasi Uduk Bento",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Nasi uduk bento dengan lauk lengkap dan lezat.",
-      price: "habis"
-    }
-  ],
-  "Hampers": [
-    {
-      name: "Ayam Bakar Babon Angkrem",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Ayam bakar spesial dengan bumbu babon angkrem dengan bobot 1.5kg.",
-      price: "100K"
-    },
-    {
-      name: "Hampers Ingkung Ayam",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Ingkung ayam utuh dengan bumbu khas Angkasa Food.",
-      price: "habis"
-    },
-    {
-      name: "Hampers Ayam Kremes",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Ayam kremes gurih dengan sambal spesial.",
-      price: "habis"
-    }
-  ],
-  "Tumpeng": [
-    {
-      name: "Tumpeng Nasi Kuning",
-      image: "Assets/menu/Tumpengnasikuning.jpg",
-      description: "Tumpeng nasi kuning lengkap dengan lauk pauk tradisional, cocok untuk 8 - 10 porsi.",
-      price: "250K"
-    },
-    {
-      name: "Nasi Tumpeng Ingkung Ayam Jawa",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Tumpeng nasi kuning dengan ingkung ayam jawa. Bonus tampah",
-      price: "600K"
-    },
-    {
-      name: "Tumpeng Mini",
-      image: "Assets/menu/Tumpengmini.jpg",
-      description: "Tumpeng mini untuk acara kecil, lengkap dengan lauk pauk. Cocok untuk 4 - 6 porsi.",
-      price: "200K"
-    }
-  ],
-  "Nasi Ater-Ater": [
-    {
-      name: "Nasi Ater-Ater Ayam Goreng",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Nasi ater-ater dengan ayam goreng crispy dan sambal pedas.",
-      price: "50K"
-    },
-    {
-      name: "Nasi Ater-Ater Ayam Bakar",
-      image: "Assets/menu/miegorengsosis.jpg",
-      description: "Nasi ater-ater dengan ayam bakar bumbu khas Angkasa Food.",
-      price: "50K"
-    }
-  ]
+   ]
+    // {
+    //     name: "Nasi Goreng Sosis",
+    //     image: "Assets/menu/nasigorengsosis.jpg",
+    //     description: "Nasi goreng lezat dengan sosis premium dan sayuran segar.",
+    //     price: "16K"
+    // },
+    // {
+    //     name: "Nasi Goreng Bakso",
+    //     image: "Assets/menu/nasigorengtelor.jpg",
+    //     description: "Nasi goreng dengan campuran bakso segar dan bumbu istimewa.",
+    //     price: "22K"
+    // },
+    // {
+    //     name: "Nasi Goreng Telur",
+    //     image: "Assets/menu/nasigorengtelor.jpg",
+    //     description: "Simple, gurih, dan selalu jadi favorit.",
+    //     price: "15K"
+    // },
+    // {
+    //     name: "Nasi Goreng Bakso Telur",
+    //     image: "Assets/menu/nasigorengtelor.jpg",
+    //     description: "Kombinasi mantap bakso dan telur.",
+    //     price: "18K"
+    // },
+    // {
+    //     name: "Nasi Goreng Sosis Telur",
+    //     image: "Assets/menu/nasigorengtelor.jpg",
+    //     description: "Gurihnya sosis dan telur dalam satu piring.",
+    //     price: "18K"
+    // },
+    // {
+    //     name: "Nasi Goreng Pindang",
+    //     image: "Assets/menu/Nasigorengpindang.jpg",
+    //     description: "Nasi goreng khas dengan aroma pindang.",
+    //     price: "15K"
+    // } 
+ 
+  // "Mie Goreng": [
+  //   {
+  //     name: "Mie Goreng Sosis",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Mie goreng dengan sosis premium dan bumbu rempah yang menggugah selera.",
+  //     price: "15K"
+  //   },
+  //   {
+  //     name: "Mie Goreng Ayam",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Mie goreng spesial dengan potongan ayam dan sayuran segar.",
+  //     price: "15K"
+  //   },
+  //   {
+  //     name: "Mie Goreng Bakso",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Mie goreng nikmat dengan bakso kenyal.",
+  //     price: "15K"
+  //   },
+  //   {
+  //     name: "Mie Goreng Sapi",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Mie goreng spesial dengan potongan ayam dan sayuran segar.",
+  //     price: "15K"
+  //   },
+  //   {
+  //     name: "Mie Goreng Mie",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Mie goreng spesial dengan potongan ayam dan sayuran segar.",
+  //     price: "15K"
+  //   }
+  // ],
+  // "Nasi Lele": [
+  //   {
+  //     name: "Nasi Lele Sambel Meteor",
+  //     image: "Assets/menu/Nasilele.jpg",
+  //     description: "Lele crispy plus sambal pedas membara.",
+  //     price: "18K"
+  //   },
+  //   {
+  //     name: "Nasi Paket Lele + Es Teh",
+  //     image: "Assets/menu/Nasilele.jpg",
+  //     description: "Paket hemat dengan lele goreng dan teh segar.",
+  //     price: "20K"
+  //   },
+  //   {
+  //     name: "Nasi Lele Kremes Sambel Lalap",
+  //     image: "Assets/menu/Nasilele.jpg",
+  //     description: "Lele goreng garing dengan kremes renyah, sambal pedas, dan lalapan segar.",
+  //     price: "habis"
+  //   }
+  // ],
+  // "Minuman": [
+  //   {
+  //     name: "Pop Ice",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Minuman populer dengan rasa manis dan asam.",
+  //     price: "5K"
+  //   },
+  //   {
+  //     name: "Es Nutrisari Jeruk",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Es nutrisari jeruk dengan rasa manis dan asam.",
+  //     price: "5K"
+  //   },
+  //   {
+  //     name: "Es Teh",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Es teh dengan rasa manis",
+  //     price: "4K"
+  //   }
+  // ],
+  // "Snack": [
+  //   {
+  //     name: "Puding Coklat",
+  //     image: "Assets/menu/puding coklat.jpg",
+  //     description: "Manis lembut dengan rasa coklat pekat.",
+  //     price: "2K"
+  //   },
+  //   {
+  //     name: "Risol Mayo",
+  //     image: "Assets/menu/dadargulung.jpg",
+  //     description: "Risol isi mayo gurih dan lezat.",
+  //     price: "3K"
+  //   },
+  //   {
+  //     name: "Dadar Gulung Mawar",
+  //     image: "Assets/menu/dadargulung.jpg",
+  //     description: "Dadar gulung isi kelapa manis dengan aroma mawar.",
+  //     price: "2K"
+  //   }
+  // ],
+  // "Nasi Bakar": [
+  //   {
+  //     name: "Nasi Bakar Ayam",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Nasi bakar dengan ayam suwir berbumbu khas.",
+  //     price: "5K"
+  //   },
+  //   {
+  //     name: "Nasi Bakar Pindang",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Nasi bakar dengan aroma pindang yang menggoda.",
+  //     price: "6K"
+  //   },
+  // ],
+  // "Seblak": [
+  //   {
+  //     name: "Seblak Sosis",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Kenikmatan seblak pedas dengan potongan sosis.",
+  //     price: "16K"
+  //   },
+  //   {
+  //     name: "Seblak Bakso",
+  //     image: "Assets/menu/seblakbaso.jpg",
+  //     description: "Seblak berkuah pedas dengan bakso kenyal.",
+  //     price: "15K"
+  //   },
+  //   {
+  //     name: "Seblak Makaroni",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Makaroni pedas gurih khas seblak favorit.",
+  //     price: "14K"
+  //   }
+  // ],
+  // "Tomyam": [
+  //   {
+  //     name: "Tomyam Bakso Ikan",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Tomyam pedas segar dengan bakso ikan.",
+  //     price: "habis"
+  //   }
+  // ],
+  // "Nasi Kotak": [
+  //   {
+  //     name: "Nasi Kenduri Nilla Bakar",
+  //     image: "Assets/menu/Nasikendurinillabakar.jpg",
+  //     description: "Nasi lengkap dengan ikan nila bakar istimewa.",
+  //     price: "35K"
+  //   },
+  //   {
+  //     name: "Nasi Ayam",
+  //     image: "Assets/menu/Nasiayam.jpg",
+  //     description: "Nasi dengan ayam goreng crispy dan sambal pedas.",
+  //     price: "17K"
+  //   },
+  //   {
+  //     name: "Nasi Paha Bawah",
+  //     image: "Assets/menu/nasikotakpahabawah.jpg",
+  //     description: "Nasi dengan paha ayam bawah goreng renyah.",
+  //     price: "12K"
+  //   }
+  // ],
+  // "Nasi Kenduri": [
+  //   {
+  //     name: "Nasi Kenduri Ayam Goreng",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Nasi lengkap dengan ayam goreng crispy dan sambal pedas.",
+  //     price: "35K"
+  //   }
+  // ],
+  // "Snack Box": [
+  //   {
+  //     name: "Snack Box",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Item bisa menyesuaikan sesuai harga",
+  //     price: "6K - 10K"
+  //   }
+  // ],
+  // "Rice Bowl": [
+  //   {
+  //     name: "Rice Bowl Ayam Suwir",
+  //     image: "Assets/menu/Ricebowlayam.jpg",
+  //     description: "Rice bowl dengan ayam suwir berbumbu lezat.",
+  //     price: "12K"
+  //   },
+  //   {
+  //     name: "Rice Bowl Sosis",
+  //     image: "Assets/menu/Ricebowlsosis.jpg",
+  //     description: "Rice bowl dengan potongan sosis premium.",
+  //     price: "12K"
+  //   },
+  //   {
+  //     name: "Rice Bowl Nugget",
+  //     image: "Assets/menu/Ricebowlnaget.jpg",
+  //     description: "Rice bowl dengan nugget renyah.",
+  //     price: "12K"
+  //   }
+  // ],
+  // "Nasi Bento": [
+  //   {
+  //     name: "Nasi Bento Kids",
+  //     image: "Assets/menu/Bentokids.jpg",
+  //     description: "Nasi bento dengan porsi kecil dan lauk favorit anak-anak.",
+  //     price: "10K"
+  //   },
+  //   {
+  //     name: "Nasi Uduk Bento",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Nasi uduk bento dengan lauk lengkap dan lezat.",
+  //     price: "habis"
+  //   }
+  // ],
+  // "Hampers": [
+  //   {
+  //     name: "Ayam Bakar Babon Angkrem",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Ayam bakar spesial dengan bumbu babon angkrem dengan bobot 1.5kg.",
+  //     price: "100K"
+  //   },
+  //   {
+  //     name: "Hampers Ingkung Ayam",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Ingkung ayam utuh dengan bumbu khas Angkasa Food.",
+  //     price: "habis"
+  //   },
+  //   {
+  //     name: "Hampers Ayam Kremes",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Ayam kremes gurih dengan sambal spesial.",
+  //     price: "habis"
+  //   }
+  // ],
+  // "Tumpeng": [
+  //   {
+  //     name: "Tumpeng Nasi Kuning",
+  //     image: "Assets/menu/Tumpengnasikuning.jpg",
+  //     description: "Tumpeng nasi kuning lengkap dengan lauk pauk tradisional, cocok untuk 8 - 10 porsi.",
+  //     price: "250K"
+  //   },
+  //   {
+  //     name: "Nasi Tumpeng Ingkung Ayam Jawa",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Tumpeng nasi kuning dengan ingkung ayam jawa. Bonus tampah",
+  //     price: "600K"
+  //   },
+  //   {
+  //     name: "Tumpeng Mini",
+  //     image: "Assets/menu/Tumpengmini.jpg",
+  //     description: "Tumpeng mini untuk acara kecil, lengkap dengan lauk pauk. Cocok untuk 4 - 6 porsi.",
+  //     price: "200K"
+  //   }
+  // ],
+  // "Nasi Ater-Ater": [
+  //   {
+  //     name: "Nasi Ater-Ater Ayam Goreng",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Nasi ater-ater dengan ayam goreng crispy dan sambal pedas.",
+  //     price: "50K"
+  //   },
+  //   {
+  //     name: "Nasi Ater-Ater Ayam Bakar",
+  //     image: "Assets/menu/miegorengsosis.jpg",
+  //     description: "Nasi ater-ater dengan ayam bakar bumbu khas Angkasa Food.",
+  //     price: "50K"
+  //   }
+  // ]
 };
 
 // Fungsi untuk generate menu HTML
